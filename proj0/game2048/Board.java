@@ -83,6 +83,9 @@ public class Board implements Iterable<Tile> {
     /** Places the Tile TILE at column COL, row ROW where COL and ROW are
      * treated as coordinates with respect to the current viewPerspective.
      *
+     * @param col destination col
+     * @param row destination row
+     * @param tile source
      * Returns whether or not this move is a merge.
      * */
     public boolean move(int col, int row, Tile tile) {
