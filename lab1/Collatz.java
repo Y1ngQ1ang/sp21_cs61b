@@ -17,12 +17,12 @@ public class Collatz {
 
     public static void main(String[] args) {
         int n = 5;
-        int next = nextNumber(n);
-        System.out.print(next + " ");
-        while (next != 1) {
-            next = nextNumber(next);
-            System.out.print(next + " ");
+        System.out.print(n + " ");
+        while (nextNumber(n) != 1) {
+            System.out.print(nextNumber(n) + " ");
+            n = nextNumber(n);
         }
+        System.out.print(1 + " ");
     }
 }
 
